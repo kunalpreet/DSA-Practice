@@ -13,6 +13,5 @@ print(twoSum([1, 2, 3, 4], 7))
 
 def test():
     a = [1,2,3,4,5]
-    
 
 # returns the index positions of the variables
