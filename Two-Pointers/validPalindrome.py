@@ -1,16 +1,17 @@
 def validPalindrome(s):
     if len(s) == 1:
         return True
+    new = ''
+    for a in s:
+        if a.isalpha() or a.isdigit():
+            new += a.lower()
 
-    s = [c.lower() for c in s if c.isalnum()]
-    l, r = 0, len(s) - 1
-
+    l, r = 0, len(new) - 1
     while l < r:
-        if s[l] != s[r]:
+        if new[l] != new[r]:
             return False
-        l = l + 1
-        r = r - 1
+        l += 1
+        r -= 1
     return True
-
 
 print(validPalindrome("A man, a plan, a canal: Panama"))
