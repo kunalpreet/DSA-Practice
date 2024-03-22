@@ -24,3 +24,4 @@ def threeSum(nums):
 print(threeSum([-1, 0, 1, 2, -1, -4]))
 print(threeSum([0, 1, 1]))
 print(threeSum([0, 0, 0]))
+
