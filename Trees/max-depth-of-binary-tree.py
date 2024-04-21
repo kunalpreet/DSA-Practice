@@ -37,7 +37,22 @@ class Solution:
 
 		level = 0
 
+		while q:q = deque()
+		if root:
+			q.append(root)
+
+		level = 0
+
 		while q:
+
+			for i in range(len(q)):
+				node = q.popleft()
+				if node.left:
+					q.append(node.left)
+				if node.right:
+					q.append(node.right)
+			level += 1
+		return level
 
 			for i in range(len(q)):
 				node = q.popleft()
